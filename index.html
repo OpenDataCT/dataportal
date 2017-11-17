@@ -40,7 +40,7 @@ d3.json("https://api.us.socrata.com/api/catalog/v1?domains="+url+"&search_contex
          }
         if (d.resource.view_count){
             if (d.resource.view_count.page_views_total){
-             asset['views'] = d.resource.view_count.page_views_total;
+             asset['visits'] = d.resource.view_count.page_views_total;
             }
          } else{
             console.log("d.resource.view_count.page_views_total");
