@@ -39,9 +39,8 @@ d3.json("https://api.us.socrata.com/api/catalog/v1?domains="+url+"&search_contex
             console.log(d.permalink);
          }
         if (d.resource.view_count){
-            if (d.resource.view_countl){
              asset['visits'] = d.resource.view_count;
-            }
+            
          } else{
             //console.log("d.resource.view_count.page_views_total");
            // console.log(d.resource.view_count);
